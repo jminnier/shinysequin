@@ -1,0 +1,21 @@
+---
+title: "shinysequin Vignette"
+author: "Jessica Minnier"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+
+
+## Load Data
+
+```{r}
+library(shinysequin)
+library(edgeR)
+mycounts <- get_count_data(groupvec=c("tissueA","tissueB","tissueC"),data=countdata, geneid_ind=1)
+plotMDS(mycounts[,-1])
+```
