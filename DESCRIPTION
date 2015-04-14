@@ -9,8 +9,10 @@ Description: Provides helper functions to create visualizations of sequencing
     data that can be shown in a Shiny app.
 License: GPL (>= 2)
 LazyData: TRUE
-Imports:
+Imports: 
     dplyr,
     ggplot2,
     ggvis,
     tidyr
+Suggests: knitr
+VignetteBuilder: knitr
