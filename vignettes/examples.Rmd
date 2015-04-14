@@ -16,6 +16,15 @@ vignette: >
 ```{r}
 library(shinysequin)
 library(edgeR)
-mycounts <- get_count_data(groupvec=c("tissueA","tissueB","tissueC"),data=countdata, geneid_ind=1)
-plotMDS(mycounts[,-1])
+mycounts <- get_count_data(groupvec=c("tissueA","tissueB","tissueC"),
+                           data=countdata,
+                           id_vars=c("MGIsymbol","Geneid"))
+head(mycounts)
+plotMDS(mycounts[,-(1:2)])
+
+dplot <- dotplot_genes(sel_groups=c("tissueA","tissueB","tissueC"),
+                       sel_genes=c("Pecam1","Npb"),
+                       gene_col="MGIsymbol",
+                       data=countdata, log2y=TRUE)
+
 ```
