@@ -2,8 +2,8 @@
 #'
 #' A dataset containing the RNA-Seq counts, a typical output of
 #' RNA-Seq bioinformatics algorithms. Each row is a gene identifier and each
-#' sample is represented by a column. Some gene information (various IDs,
-#' chromosome, start and end positions, etc.) is provided. There are three
+#' sample is represented by a column. Some gene information variables (various
+#' IDs, chromosome, start and end positions, etc.) are provided. There are three
 #' tissues (A,B,C) each with three biological replicates.
 #'
 #' @format  A data frame with 18094 rows and 17 variables:
