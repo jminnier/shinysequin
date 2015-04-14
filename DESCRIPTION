@@ -5,7 +5,7 @@ Version: 0.0.9000
 Date: 2015-04-14
 Authors@R: person("Jessica", "Minnier", email = "minnier@ohsu.edu",
     role = c("aut", "cre"))
-Description: Provides helper functions to create visualization of sequencing
+Description: Provides helper functions to create visualizations of sequencing
     data that can be shown in a Shiny app.
 License: What license is it under?
 LazyData: TRUE
